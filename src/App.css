@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+* {
+  font-family: sans-serif;
 }
+p { word-break: break-all }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  max-width: 420px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h5{
+  margin: 0em;
+  color: rgb(35, 35, 245);
+  font-size: 17px;
+}
+.headPost {
+  padding: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: whitesmoke;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+    justify-content: space-between;
+  /* border: 1px; */
+  border-bottom: 1px solid lightgrey;
+}
+
+
+.typePost {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.userImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  /* margin: auto; */
+  bottom: 23px;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+#form{
+  width: 87%;
+}
+.icon{
+  margin-left: 225px;
+}
+.textarea {
+  width: 90%;
+  height: 35px;
+  border: 0;
+  margin: 13px;
+  padding: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.postButton {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+.postBtn {
+  display: block;
+  width: 60px;
+  margin: 10px;
+  height: 29px;
+  border: 0;
+  background: rgb(35, 35, 245);
   color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.postHead {
+  display: flex;
+}
+.post {
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid lightgrey;
+    border-radius: 8px;
+    margin: 6px;
+}
+.postContent{
+  margin: 12px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.extraEmoji {
+    padding: 5px;
+    border: 1px solid lightgrey;
+    margin: 5px;
+    border-radius: 69px;
+    height: 42px;
+    width: 252px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extraEmoji button{
+  background-color: white;
+  border: 0;
+  border-radius: 30px;
+  padding: 3px;
+
+}
+.likeSection {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 13px;
+}
+.postImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.userName{
+  display: flex;
+}
+.userandtime {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.userandtime p {
+  margin: 0;
+  font-size: 13px;
+}
+button.likeBtn,
+button.commentBtn,
+button.shareBtn {
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button.likeBtn:hover,
+button.commentBtn:hover,
+button.shareBtn:hover {
+  background-color: lightgrey;
+}
+
+button:active {
+  box-shadow: 0 5px white;
+  transform: translateY(2px);
 }
