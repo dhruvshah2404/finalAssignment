@@ -19,12 +19,36 @@ class App extends Component {
           count: 10
         },
         {
-          name: "Palak",
-          img: "https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-1/c2.0.240.240a/p240x240/29572944_772072992963106_8349925219908521894_n.jpg?_nc_cat=101&_nc_ohc=FSazlhKrWxIAX-Nbx2j&_nc_ht=scontent.fyyc3-1.fna&oh=bf80dce23f8f149714ae9be5fcc74628&oe=5ED8E67F",
-          post: "I am fine coming second",
+          name: "Dhruv",
+          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          post: "Seconddddddddddddddd",
           id: 1,
           date: moment().calendar(),
-          count: 30
+          count: 8
+        },
+        {
+          name: "Dhruv",
+          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          post: "I am third",
+          id: 2,
+          date: moment().calendar(),
+          count: 10
+        },
+        {
+          name: "Dhruv",
+          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          post: "Im fourth",
+          id: 3,
+          date: moment().calendar(),
+          count: 10
+        },
+        {
+          name: "Palak",
+          img: "https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-1/c2.0.240.240a/p240x240/29572944_772072992963106_8349925219908521894_n.jpg?_nc_cat=101&_nc_ohc=FSazlhKrWxIAX-Nbx2j&_nc_ht=scontent.fyyc3-1.fna&oh=bf80dce23f8f149714ae9be5fcc74628&oe=5ED8E67F",
+          post: "I am fine coming last",
+          id: 4,
+          date: moment().calendar(),
+          count: 50
         }
       ],
       currentUser: {},
@@ -75,6 +99,8 @@ class App extends Component {
     } else if (newUser.name === "Dhruv") {
       newUser.img="https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D"
 
+    } else if (newUser.name === "Amit") {
+      newUser.img="https://previews.agefotostock.com/previewimage/medibigoff/d17f88daba31455a7ee27cabfce867c6/we050686.jpg"
     }
     this.setState({currentUser:newUser})
   }
