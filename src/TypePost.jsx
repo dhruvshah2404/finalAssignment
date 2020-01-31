@@ -9,6 +9,7 @@ class TypePost extends Component {
           <img
             className="userImg"
             src={this.props.currentUser.img}
+            alt="userImg"
           ></img>
           <form id="form">
             <textarea

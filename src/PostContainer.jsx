@@ -11,7 +11,7 @@ class PostContainer extends Component {
     return (
       <React.Fragment>
         {this.props.allcomment.map((elem, index) => (
-          <Post elem={elem} index={index} allcomment={this.props.allcomment} like={this.props.like}/>
+          <Post elem={elem} key={elem.id}index={index} allcomment={this.props.allcomment} like={this.props.like}/>
         ))}
       </React.Fragment>
     );

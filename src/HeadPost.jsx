@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 class HeadPost extends Component {
-  state = {};
-
   onChange = (event) => {
     this.props.changeUser(event.target.value)
   }
