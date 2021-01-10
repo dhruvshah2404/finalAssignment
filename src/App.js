@@ -12,7 +12,8 @@ class App extends Component {
       allcomment: [
         {
           name: "Dhruv",
-          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          img:
+            "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
           post: "Hello I am first here",
           id: 0,
           date: moment().calendar(),
@@ -20,7 +21,8 @@ class App extends Component {
         },
         {
           name: "Dhruv",
-          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          img:
+            "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
           post: "Seconddddddddddddddd",
           id: 1,
           date: moment().calendar(),
@@ -28,7 +30,8 @@ class App extends Component {
         },
         {
           name: "Dhruv",
-          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          img:
+            "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
           post: "I am third",
           id: 2,
           date: moment().calendar(),
@@ -36,7 +39,8 @@ class App extends Component {
         },
         {
           name: "Dhruv",
-          img:"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D",
+          img:
+            "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
           post: "Im fourth",
           id: 3,
           date: moment().calendar(),
@@ -44,7 +48,8 @@ class App extends Component {
         },
         {
           name: "Palak",
-          img: "https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-1/c2.0.240.240a/p240x240/29572944_772072992963106_8349925219908521894_n.jpg?_nc_cat=101&_nc_ohc=FSazlhKrWxIAX-Nbx2j&_nc_ht=scontent.fyyc3-1.fna&oh=bf80dce23f8f149714ae9be5fcc74628&oe=5ED8E67F",
+          img:
+            "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg",
           post: "I am fine coming last",
           id: 4,
           date: moment().calendar(),
@@ -52,11 +57,9 @@ class App extends Component {
         }
       ],
       currentUser: {},
-      id: 5,
+      id: 5
     };
   }
-
-
 
   increaseLike = postId => {
     const arraylikes = this.state.allcomment.map(e => {
@@ -72,13 +75,13 @@ class App extends Component {
     this.setState({ id: this.state.id + 1 });
     let newPost = {
       name: this.state.currentUser.name,
-      img:this.state.currentUser.img,
+      img: this.state.currentUser.img,
       post: input,
       id: this.state.id,
       date: moment().calendar(),
       count: 0,
-      isHover: false,   
-    }
+      isHover: false
+    };
 
     this.state.allcomment.unshift(newPost);
     let newcomment = this.state.allcomment;
@@ -89,37 +92,42 @@ class App extends Component {
     // let newArry = this.state.currentUser;
     let newUser = {
       name: user,
-      img: ''
-    }
-
+      img: ""
+    };
     if (newUser.name === "Palak") {
-      newUser.img="https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-1/c2.0.240.240a/p240x240/29572944_772072992963106_8349925219908521894_n.jpg?_nc_cat=101&_nc_ohc=FSazlhKrWxIAX-Nbx2j&_nc_ht=scontent.fyyc3-1.fna&oh=bf80dce23f8f149714ae9be5fcc74628&oe=5ED8E67F"
+      newUser.img =
+        "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg";
     } else if (newUser.name === "Jawad") {
-      newUser.img="https://media-exp1.licdn.com/dms/image/C4E03AQE837Yz3F5T2A/profile-displayphoto-shrink_200_200/0?e=1585785600&v=beta&t=7GACtUgliJ7mbqt5-EJ7-4Ua4_GxuBt8DUf5U-P0vj8"
+      newUser.img =
+        "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg";
     } else if (newUser.name === "Dhruv") {
-      newUser.img="https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/16797538_598208323715406_2838823244012192800_o.jpg?_nc_cat=100&_nc_ohc=DmMoiNL6PTcAX9ox1vf&_nc_ht=scontent-yyz1-1.xx&oh=673c0b2fcafcff4b0b03eb643e77e38e&oe=5EDAFB2D"
-
+      newUser.img =
+        "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg";
     } else if (newUser.name === "Amit") {
-      newUser.img="https://previews.agefotostock.com/previewimage/medibigoff/d17f88daba31455a7ee27cabfce867c6/we050686.jpg"
+      newUser.img =
+        "https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg";
     }
-    this.setState({currentUser:newUser})
-  }
+    this.setState({ currentUser: newUser });
+  };
   // handleHover = likeid => {
   //   const newlike =
   //   this.state.allcomment.map(e => {
   //     if (e.id === likeid) {
   //       this.setState(this.toggleHover);
   //       console.log("id is same")
-  //     } 
+  //     }
   //   });
   //   this.setState({allcomment:newlike})
   // };
 
-
   render() {
     return (
       <main>
-        <AddPostContainer addComment={this.addComment} changeUser={this.changeUser} currentUser={this.state.currentUser}/>
+        <AddPostContainer
+          addComment={this.addComment}
+          changeUser={this.changeUser}
+          currentUser={this.state.currentUser}
+        />
         <div className="postContainer">
           <PostContainer
             allcomment={this.state.allcomment}

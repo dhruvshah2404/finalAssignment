@@ -50,14 +50,12 @@ class Post extends Component {
     <div className="postContent">
       <p> {this.props.elem.post}</p>
         </div>
-        
         {this.state.isHover && 
           <Emoji />
         }
     <div className="likeSection">
           <button id={this.props.elem.id}
             className="likeBtn"
-            // onClick={() => this.props.like(this.props.elem.id)}
             onClick={this.toggleLike}
       >
         <i className="far fa-thumbs-up"></i> Like {this.props.elem.count}

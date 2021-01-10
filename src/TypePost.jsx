@@ -8,7 +8,7 @@ class TypePost extends Component {
         <div className="typePost">
           <img
             className="userImg"
-            src={this.props.currentUser.img}
+            src={this.props.currentUser.img || 'https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg'} 
             alt="userImg"
           ></img>
           <form id="form">
